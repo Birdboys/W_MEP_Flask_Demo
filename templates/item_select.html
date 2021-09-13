@@ -15,8 +15,9 @@
 	<meta charset="utf-8">
 	<title>MEP Item Recommender</title>
 	<style>
-	input[name='item'] {
-		min-width: 26%;
+	input[name='elekid'] {
+		position:absolute;
+		bottom:0;
 	}
 	</style>
 </head>
@@ -18236,6 +18237,10 @@
 
 			<button type = "submit" value = {{item_rec}} name = "rec">{{item_rec}}</button>
 		{% endfor %}
+	</form>
+	
+	<form action = "/electrical">
+		<input name = "elekid" type = "submit" value = "Electrical"></button>
 	</form>
 	
 
